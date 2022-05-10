@@ -1,0 +1,34 @@
+{
+  "parent": "additionalfood:recipes/root",
+  "rewards": {
+    "recipes": [
+      "additionalfood:sweetberry_pie"
+    ]
+  },
+  "criteria": {
+    "has_sweetberries": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:sweet_berries"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "additionalfood:sweetberry_pie"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_sweetberries",
+      "has_the_recipe"
+    ]
+  ]
+}

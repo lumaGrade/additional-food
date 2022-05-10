@@ -1,0 +1,36 @@
+{
+  "parent": "additionalfood:recipes/root",
+  "rewards": {
+    "recipes": [
+      "additionalfood:vegetable_soup"
+    ]
+  },
+  "criteria": {
+    "has_vegetables": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:potato",
+              "minecraft:carrot",
+              "minecraft:beetroot"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "additionalfood:vegetable_soup"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_vegetables",
+      "has_the_recipe"
+    ]
+  ]
+}

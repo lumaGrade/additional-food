@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:salmon"
+    },
+    {
+      "item": "minecraft:salmon"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "additionalfood:salmon_soup",
+    "count": 1
+  }
+}

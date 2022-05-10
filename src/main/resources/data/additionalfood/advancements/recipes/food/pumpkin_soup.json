@@ -1,0 +1,34 @@
+{
+  "parent": "additionalfood:recipes/root",
+  "rewards": {
+    "recipes": [
+      "additionalfood:pumpkin_soup"
+    ]
+  },
+  "criteria": {
+    "has_pumpkins": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:pumpkin"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "additionalfood:pumpkin_soup"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_pumpkins",
+      "has_the_recipe"
+    ]
+  ]
+}
