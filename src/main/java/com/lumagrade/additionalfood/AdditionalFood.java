@@ -1,14 +1,15 @@
 package com.lumagrade.additionalfood;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.tag.TagRegistry;
 import net.minecraft.item.Item;
-import net.minecraft.tag.Tag;
+import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 public class AdditionalFood implements ModInitializer {
     public static final String MOD_ID = "additionalfood";
-    public static final Tag<Item> TEA_HERBS = TagRegistry.item(new Identifier(MOD_ID, "tea_herbs"));
+
+    public static final TagKey<Item> TEA_HERBS = TagKey.of(Registry.ITEM_KEY, new Identifier(MOD_ID, "tea_herbs"));
 
     @Override
     public void onInitialize() {
