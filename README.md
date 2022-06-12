@@ -1,5 +1,5 @@
 # additional-food
- Additional food items for Minecraft 1.18.2
+ Additional food items for Minecraft 1.19
 
 
 Not(yet) formatted documentation / notes for development
